@@ -62,7 +62,7 @@
 					float:left;
 					margin-top: 20px;
 /*					margin-left: 20px;
-*/					padding-left: 80px;
+*/					padding-left: 20px;
 				}
 				#menuItems{
 				    margin-top: 20px;
@@ -76,9 +76,7 @@
 /*				   margin: 20px;
 */				    
 				}
-				.logo + .PinDown{
-					margin-left: -20px;
-				}
+				
 				</style>
 				<div class="logo">
 					<img src="images/logo.png" alt="logo" width="30" height="34"/>
@@ -137,7 +135,10 @@
 					  	<a href="#prefirst" style="text-decoration:none " class="main_b"><font color="white">The Map</font></a>
 					  </li>
 					  <li>
-					  	<a href="#the one" style="text-decoration:none"><font color="white">Founders</font></a>
+					  	<a href="#first" style="text-decoration: none"><font color="white">Functionalities and Features</font></a>
+					  </li>
+					  <li>
+					  	<a href="#the one" style="text-decoration:none"><font color="white">The Founders</font></a>
 					  </li>
 					  <li>
 					  	<a href="#fifth" style="text-decoration:none"><font color="white">The App</font></a>
@@ -150,7 +151,7 @@
 					<div class="container">
 						<h2>About</h2>
 							<!-- <small>A Campus Event Platform to Improve the Experience of Real Life Engagements.</small> -->
-							<p>PinDown is a Boulder tech startup. Our app/web service is an event service designed for CU Boulder community. We collect all of the public campus events and put it on our app, a singular platform and a shared calendar. We have the ambition to connect both event holders/organizations and event viewers/individuals, or event viewers with other event viewers through attending events. We believe PinDown serves the mission of maximally benefiting people's career pursuance and social life in events they choose to participate. Thus, the best way to define this app is "A Campus Event Platform to Improve the Experience of Real Life Engagements."
+							<p>PinDown is a Boulder tech startup. Our app/web service is an event service designed for CU Boulder community. We collect all of the public campus events and put it on our app, a singular platform and a shared calendar. We have the ambition to connect both event holders/organizations and event viewers/individuals, or event viewers with other event viewers through attending events. We believe PinDown serves the mission of maximally benefiting people's career pursuance and social life in events they choose to participate. Thus, we call this app "A Campus Event Platform to Improve the Experience of Real Life Engagements."
 							</p>
 					</div>
 				</header>
@@ -197,10 +198,10 @@
 			</section>
 		<!-- First -->
 			<section id="first" class="main">
-				<header>
-						<div class="container">
-						</div>
-					</header>
+				<!-- <header>
+					<div class="container">
+					</div>
+				</header> -->
 				<div class="content featured"> 
 					<!-- dark style1 -->
 					<div class="container">
@@ -208,54 +209,79 @@
 						<div class="row">
 							<div class="col-12">
 							</div>
-							<div class="col-4 col-12-narrow"> 
+
+							<div class="col-3 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
+									<header>
+										<h3><font color="white">Map based service</font></h3>
+									</header>
+									<p><font color="white">PinDown is a map based event platform. We want to provide the experience of visualization.</font></p>
+								</section>
+							</div>
+
+							<div class="col-3 col-12-narrow"> 
 								<!-- Deminsion of a card -->
 								<section>
-									<span class="feature-icon"><span class="icon fa-" style="color: white;"></span></span>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
 									<header>
 										<h3><font color="white">One pin, one event</font></h3>
 									</header>
-									<p><font color="white">Each pin shown on the map indicates an event. You can see the event details by clicking the pin. </font></p>
+									<p><font color="white">Each pin shown on the map indicates an event. YWhen clicking a pin, an info window that contains event details will pop up. </font></p>
 								</section>
 							</div>
-							<div class="col-4 col-12-narrow">
+							
+							<div class="col-3 col-12-narrow">
 								<section>
-									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
 									<header>
-										<h3><font color="white">Instant</font></h3>
+										<h3><font color="white">User's location</font></h3>
 									</header>
-									<p><font color="white">Real-time feedback.</font></p>
+									<p><font color="white">Users can choose to show their own location on the map. They can know the estimated distance of events around them.</font></p>
 								</section>
 							</div>
-							<div class="col-4 col-12-narrow">
+
+							<div class="col-3 col-12-narrow">
 								<section>
-									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
 									<header>
-										<h3><font color="white">Campus-wide</font></h3>
+										<h3><font color="white">Pins filter system</font></h3>
 									</header>
-									<p><font color="white">Class, clubs, concerts, sports, and greek.</font></p>
+									<p><font color="white">Every event belongs to a category. Users can distinguish the pins and find out events quicker by selecting different categories of events.</font></p>
 								</section>
 							</div>
+							
 							<div class="col-6 col-12-narrow"> 
 								<!-- Deminsion of a card -->
 								<section>
-									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
 									<header>
-										<h3><font color="white">Timely</font></h3>
+										<h3><font color="white">Number of views</font></h3>
 									</header>
-									<p><font color="white">What's going on, before it happens.</font></p>
+									<p><font color="white">We collect the number of views when every time the event info window is opened. The count won't increase when same user open the window repeatedly.</font></p>
 								</section>
 							</div>
+
 							<div class="col-6 col-12-narrow"> 
 								<!-- Deminsion of a card -->
 								<section>
-									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
 									<header>
-										<h3><font color="white">Timely</font></h3>
+										<h3><font color="white">Past events, happening events, or Event that will happen later</font></h3>
 									</header>
-									<p><font color="white">What's going on, before it happens.</font></p>
+									<p><font color="white">Past events: Pins will always disappear when the events are expired.</font><br><font color="green">Events that are happening: The color of pins will be green.</font><br /><font color="red">Event that will happen later: The color of pins will be red.</font></p>
 								</section>
 							</div>
+
+							<!-- <div class="col-4 col-12-narrow"> 
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock" style="color: white;"></span></span>
+									<header>
+										<h3><font color="white">Two pin colors</font></h3>
+									</header>
+									<p><font color="white">Pins have two color: green (happening now) and red (happening later).</font></p>
+								</section>
+							</div> -->
 							<!-- <div class="col-12">
 								<footer>
 									<a href="#second" class="button scrolly">How it works</a>
@@ -667,7 +693,7 @@
 					<li><a href="https://www.facebook.com/PinDown-882214588793150/?ref=bookmarks" class="icon brands fa-facebook-f" style="color:white"><span class="label">Facebook</span></a></li>
 					<li><a href="https://www.instagram.com/_pindown/" class="icon brands fa-instagram" style="color:white"><span class="label">Instagram</span></a></li>
 					
-					<li><a href="https://github.com/shch8713/PinDown" class="icon brands fa-github" style="color:white"><span class="label">GitHub</span></a></li>
+					<!-- <li><a href="https://github.com/shch8713/PinDown" class="icon brands fa-github" style="color:white"><span class="label">GitHub</span></a></li> -->
 				</ul>
 				<!-- <div class="row">
 							<div class="col-12">
