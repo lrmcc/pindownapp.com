@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PinDown</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			body {
+				background: #ffab40;
+			}
+		</style>
+		<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+	</head>
+	<body class="is-preload">
+			<!-- <div id="topnav">
+				<header id="header">
+					<h1><a href="http://pindownapp.com"></a>PinDown</h1>
+					
+						<nav class="links">
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Ipsum</a></li>
+								<li><a href="#">Feugiat</a></li>
+								<li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li>
+							</ul>
+						</nav>
+					
+				</header>
+			</div>
+		 -->
+
+
+			<div class="topnav">
+				<style>
+				.topnav a{
+					/*padding: 10px;*/
+  					text-decoration: none;
+  					font-size: 20px;
+  					width: 100%;
+  				}
+  				body {
+					font-family: Verdana;
+				}
+				</style>
+					<ul class="list" id="menuItems">
+						<style>
+							ul, li {
+    							display:inline;
+						}
+						.list li {
+						    display:inline-block;
+						    border-right:2px solid;
+						    padding:15px;
+						    color: white;
+						}
+						.list li:first-child {
+						    border-left:none;
+						}
+						ul li.PinDown{
+							margin-right: end;
+							text-decoration: none;
+						}
+						/*.button {
+							  background-color: #ffab40;*/
+							  /*-webkit-border-radius: 10px;
+							  border-radius: 10px;*/
+							  /*border: none;*/
+							  /*color: #FFFFFF;
+							  cursor: pointer;
+							  display: inline-block;
+							  font-family: Arial;
+							  font-size: 20px;
+							  padding: 5px 10px;*/
+							  /*text-align: center;
+							  text-decoration: none;
+							  -webkit-animation: glowing 1500ms infinite;
+							}
+							@-webkit-keyframes glowing {
+							  0% { background-color: #ffab40; -webkit-box-shadow: 0 0 3px #ffffff; }
+							  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+							  100% { background-color: #ffffff; -webkit-box-shadow: 0 0 3px #ffab40; }
+							}*/
+							/*fix this part--animation*/
+						</style>
+						<li class="PinDown">
+							<a style="text-decoration:none"><font color="white">PinDown</font></a>
+						</li>
+					  <li>
+					  	<a href="#head" style="text-decoration:none"><font color="white">About</font></a>
+					  </li>
+					  <li>
+					  	<a href="#prefirst" style="text-decoration:none " class="main_b"><font color="white">The Map</font></a>
+					  </li>
+					  <li>
+					  	<a href="#the one" style="text-decoration:none"><font color="white">Founders</font></a>
+					  </li>
+					  <li>
+					  	<a href="#fifth" style="text-decoration:none"><font color="white">The App</font></a>
+					  </li>
+					</ul>  
+			</div>
+
+			<section id="head" class="main">
+				<header>
+					<div class="container">
+						<h2>About</h2>
+							<!-- <small>A Campus Event Platform to Improve the Experience of Real Life Engagements.</small> -->
+							<p>PinDown is a Boulder tech startup. Our app/web service is an event service designed for CU Boulder community. We collect all of the public campus events and put it on our app, a singular platform and a shared calendar. We have the ambition to connect both event holders/organizations and event viewers/individuals, or event viewers with other event viewers through attending events. We believe PinDown serves the mission of maximally benefiting people's career pursuance and social life in events they choose to participate. Thus, the best way to define this app is "A Campus Event Platform to Improve the Experience of Real Life Engagements."
+							</p>
+					</div>
+				</header>
+
+			<section id="prefirst" class="main">
+				<!-- <header>
+					<div class="container">
+						<h2>The Map</h2>
+						<p>Explore, Experience, and Engage
+						</p>
+					</div>
+				</header> -->
+				<header>
+					<div class="container">
+						<h2>The Map</h2>
+							<!-- <small>Live Map</small> -->
+						<p>Explore, Experience, and Engage
+						</p>
+							
+					    <!--The div element for the map -->
+					    <div id="map"></div>
+					    <script>
+							// Initialize and add the map
+							function initMap() {
+							  // The location of Uluru
+							  var uluru = {lat: -25.344, lng: 131.036};
+							  // The map, centered at Uluru
+							  var map = new google.maps.Map(
+							      document.getElementById('map'), {zoom: 4, center: uluru});
+							  // The marker, positioned at Uluru
+							  var marker = new google.maps.Marker({position: uluru, map: map});
+							}
+							    </script>
+							    <!--Load the API from the specified URL
+							    * The async attribute allows the browser to render the page while the API loads
+							    * The key parameter will contain your own API key (which is not needed for this tutorial)
+							    * The callback parameter executes the initMap() function
+							    -->
+							    <script async defer
+							    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdHb_vSY0w0bzeOUXgDsOexiZl1K9PAhA&callback=initMap">
+						</script>
+					</div>
+				</header>
+			</section>
+		<!-- First -->
+			<section id="first" class="main">
+				<header>
+						<div class="container">
+						</div>
+					</header>
+				<div class="content featured"> 
+					<!-- dark style1 -->
+					<div class="container">
+						<h3><font color="white">Functionalities and Features</font></h3>
+						<div class="row">
+							<div class="col-12">
+								<!-- <footer>
+									<a>Functionalities and Features</a>
+								</footer> -->
+							</div>
+							<div class="col-4 col-12-narrow"> 
+								<!-- Deminsion of a card -->
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<header>
+										<h3>Timely</h3>
+									</header>
+									<p>What's going on, before it happens.</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
+									<header>
+										<h3>Instant</h3>
+									</header>
+									<p>Real-time feedback. </p>
+								</section>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
+									<header>
+										<h3>Campus-wide</h3>
+									</header>
+									<p>Class, clubs, concerts, sports, and greek.</p>
+								</section>
+							</div>
+							<!-- <div class="col-12">
+								<footer>
+									<a href="#second" class="button scrolly">How it works</a>
+								</footer>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Second -->
+			<section id="second" class="main">
+				<header>
+					<style>
+						hr {
+							width: 100%;
+							height: 3px;
+							margin-left: auto;
+							margin-right: auto;
+							background-color:#ffab40;
+							border: 0 none;
+							margin-top: 20px;
+							margin-bottom:20px;
+							}
+					</style>
+					<div class="container">
+						<img src="images/logo_or.png" alt="PinDown Logo Orange" class="center" width="60" height="68">
+						<h2 style="color: #ffab40">PinDown</h2>
+						<hr>
+
+<!-- 						<h2>More Info About the App, and Why We Built PinDown.</h2>
+ -->						<!-- If any remark in this div looks meaningless and extra, then leave it blank -->
+						<!-- <p>Use the app as a calendar or a last minute checker of what's happening and where.<br />
+						We are a trusted source that links your social and academic realms.<br />
+						</p> -->
+					</div>
+				</header>
+				<div class="content featured">
+					<div id="the one" class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+									<img src="images/logo.png" alt="PinDown Logo" class="center" width="60" height="68">
+									<h3><font color="white">The Founders of PinDown</font></h3>
+									<p><font color="white">We're computer science students at CU Boulder. PinDown is built because we strive to make a greater impact and bring the CU community together.</font></p>
+									<p><font color="white">Please reach out if you have any questions, suggestions or anything related to PinDown. We'll be more than happy to help!</font></p>
+								</section>
+							</div>
+							<div class="col-8 col-12-narrow">
+								<div class="row">
+									<div class="col-6"><a href="#" class="image fit"><img src="images/luke.jpg" alt="" /><font color="white">Luke McConnell <br> CTO<br />Luke.McConnell@colorado.edu</font></a>
+									</div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/sc.jpg" alt="" /><font color="white">Shih-Hsi Chien <br> CEO<br /> Shihhsi.Chien@colorado.edu</font></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- best deal ever made on shark tank!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+		<!-- Third -->
+			<!-- <section id="third" class="main">
+				<header>
+					<div class="container">
+						<h2>Todo222.</h2>
+						<p>Todo333.<br />
+						Todo444.</p>
+					</div>
+				</header>
+				<div class="content dark style3">
+					<div class="container">
+						<span class="image featured"><img src="images/pic07.jpg" alt="" /></span>
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<h3>Todo555.</h3>
+								<p>Todo666.</p>
+								<p>Todo777.</p>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<p>Todo888.</p>
+								<p>Todo999.</p>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<p>Todo101010.</p>
+								<p>Todo111111.</p>
+								<footer>
+									<a href="#fourth" class="button scrolly">Todo121212.</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+		<!-- Basic Elements -->
+		<!--
+			<section class="main">
+				<header>
+					<div class="container">
+						<h2>A Whole Lotta Elements</h2>
+						<p>General purpose elements for every general purpose. Or something like that.</p>
+					</div>
+				</header>
+				<div class="content style1 dark">
+					<div class="container">
+						<section>
+							<header>
+								<h3>Paragraph</h3>
+								<p>This is a byline</p>
+							</header>
+							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+							amet risus elit.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Blockquote</h3>
+							</header>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
+							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
+						</section>
+						<section>
+							<header>
+								<h3>Divider</h3>
+							</header>
+							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+							<hr />
+							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Unordered List</h3>
+							</header>
+							<ul class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ul>
+						</section>
+						<section>
+							<header>
+								<h3>Ordered List</h3>
+							</header>
+							<ol class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ol>
+						</section>
+						<section>
+							<header>
+								<h3>Table</h3>
+							</header>
+							<div class="table-wrapper">
+								<table class="default">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>00001</td>
+											<td>Lorem ipsum dolor</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00002</td>
+											<td>Sit amet nullam</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00003</td>
+											<td>Feugiat felis viverra</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00004</td>
+											<td>Sagittis enim felis</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00005</td>
+											<td>Nullam sed vestibulum</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="3"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<section>
+							<header>
+								<h3>Form</h3>
+							</header>
+							<form method="post" action="#">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-narrow">
+										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
+									</div>
+									<div class="col-6 col-12-narrow">
+										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+									</div>
+									<div class="col-12">
+										<div class="select" tabindex="-1">
+											<select name="department" id="department">
+												<option value="">Choose a department</option>
+												<option value="1">Manufacturing</option>
+												<option value="2">Administration</option>
+												<option value="3">Support</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button" value="Send Message" /></li>
+											<li><input type="reset" class="button alt" value="Clear Form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</section>
+		-->
+
+		<!-- Fourth -->
+			<!-- <section id="fourth" class="main">
+				<header>
+					<div class="container">
+						<h2>Todo1.</h2>
+						<p>Todo2.<br />
+						Todo3.</p>
+					</div>
+				</header>
+				<div class="content style4 featured">
+					<div class="container medium">
+						<form method="post" action="#">
+							<div class="row gtr-50">
+								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
+								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
+								<div class="col-12"><textarea name="message" placeholder="Message"></textarea></div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" class="button" value="Send Message" /></li>
+										<li><input type="reset" class="button alt" value="Clear Form" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section> -->
+	
+			<!-- <section id="fourth" class="main">
+				<style>
+					.card-img-top {
+				    width: 100%;
+				    height: 15vw;
+				    object-fit: cover;
+				    text-align: center;
+				}
+				</style>
+				<header>
+					<div class="container">
+						<h2>The Founders</h2>
+						<div class="row">
+						  <div class="col-md-6 col-lg-4">
+						    <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="images/luke.jpg" />
+						      <div class="card-block">
+						        <h4 class="card-title">CTO</h4>
+
+						        <p class="card-text">Luke McConnell</p>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="col-md-6 col-lg-4">
+						    <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="images/sc.jpg" />
+						      <div class="card-block">
+						        <h4 class="card-title">CEO</h4>
+
+						        <p class="card-text">Shih-Hsi Chien</p>
+						      </div>
+						    </div>
+						  </div> -->
+						<!-- <div class="card">
+						  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+						  <div class="container">
+						    <h4><b>John Doe</b></h4>
+						    <p>Architect & Engineer</p>
+						  </div>
+						</div>
+						<div class="card">
+						  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+						  <div class="container">
+						    <h4><b>jack Doe</b></h4>
+						    <p>Architect & art</p>
+						  </div>
+						</div> -->
+						<!-- <div class="row">
+						  <div class="column">
+						    <div class="card">
+						    	<img src="images/luke.jpg" alt="Luke" width="200" height="266"style="width:100%">
+						    	<div class="w3-container w3-center">
+								    <p>The Italian / Austrian Alps</p>
+								  </div>
+						    </div>
+						  </div>
+						  <div class="column">
+						    <div class="card">
+						    	<img src="images/sc.jpg" alt="Shih-Hsi" width="354" height="266" style="width:100%">
+						    	<div class="w3-container w3-center">
+								    <p>The Italian / Austrian Alps</p>
+								  </div>
+						  </div>
+						</div>
+					</div> -->
+					<!-- </div>
+				</header>
+			</section> -->
+
+			<!-- Fifth (the bottom) -->
+			<section id="fifth" class="main">
+				<!-- <style>
+					.wrapper {
+						  border: 3px solid #ffab40;
+						  border-radius: 100px;
+						  padding-left: 50px;
+						padding-right: 50px;
+					}
+				</style> -->
+				<header>
+					<div class="container">
+						<h2>The PinDown App</h2>							
+						<p style="margin-bottom: 1em;">
+							The PinDown app will be launched soon. Stay tuned!
+						</p>
+						<img src="images/app_store_icon.png" alt="centered image" width="360" height="60">
+						<footer>
+						<a href="#" class="button scrolly" style="background-color: #ffab40; margin-top: -2em;">Click to get notificaiton when launched
+						</a>
+					</footer>
+					  <!-- <li>
+					  	<a href="#">About</a>
+					  </li>
+					  <li>
+					  	<a href="#">The Map</a>
+					  </li>
+					  <li>
+					  	<a href="#">Founders</a>
+					  </li> -->
+<!-- 					</ul>  
+
+ -->				<!-- <style>
+						.footer {
+						  position: fixed;
+						  background-color: #ffab40;
+/*						  text-align: center;
+*/						}
+					</style>	 -->
+					
+					</div>
+					</header>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<style>
+					ul.social {
+						text-align: center;
+					}
+				</style>
+				<ul class="icons" id="social">
+    
+					<li><a href="https://www.facebook.com/PinDown-882214588793150/?ref=bookmarks" class="icon brands fa-facebook-f" style="color:white"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/_pindown/" class="icon brands fa-instagram" style="color:white"><span class="label">Instagram</span></a></li>
+					
+					<li><a href="https://github.com/shch8713/PinDown" class="icon brands fa-github" style="color:white"><span class="label">GitHub</span></a></li>
+				</ul>
+				<!-- <div class="row">
+							<div class="col-12">
+								<img src="images/logo.png" alt="PinDown Logo" class="center" width="60" height="68">
+							</div>
+					
+				</div> -->
+				<div class="copyright">
+					<ul class="menu">
+						<li><font color="white">&copy; PinDown. </font></li>
+						<li><a href="#"><font color="white">Terms of Service</font></a></li>
+						<li><a href="#"><font color="white">Privacy Policy</font></a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
