@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<style>
 			body {
 				background: #ffab40;
@@ -14,7 +15,7 @@
 		<style>
        /* Set the size of the div element that contains the map */
       #map {
-        height: 400px;  /* The height is 400 pixels */
+        height: 600px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
        }
     </style>
@@ -50,7 +51,38 @@
   				body {
 					font-family: Verdana;
 				}
+				.topnav{
+					width: 100%;
+					text-align: center;
+				    clear:both; 
+				    display:inline-block;
+				}
+				.logo{
+					display:inline-block;
+					float:left;
+					margin-top: 20px;
+/*					margin-left: 20px;
+*/					padding-left: 80px;
+				}
+				#menuItems{
+				    margin-top: 20px;
+				    padding-right: 10px;
+				   list-style-type: none;
+				    float:left; display:inline-block;
+				}
+				#menuItems li{
+				   display: inline;
+				   font-size: 18px;
+/*				   margin: 20px;
+*/				    
+				}
+				.logo + .PinDown{
+					margin-left: -20px;
+				}
 				</style>
+				<div class="logo">
+					<img src="images/logo.png" alt="logo" width="30" height="34"/>
+				</div>
 					<ul class="list" id="menuItems">
 						<style>
 							ul, li {
@@ -59,15 +91,19 @@
 						.list li {
 						    display:inline-block;
 						    border-right:2px solid;
-						    padding:15px;
+						    padding:10px;
 						    color: white;
 						}
 						.list li:first-child {
 						    border-left:none;
 						}
 						ul li.PinDown{
-							margin-right: end;
+/*							margin-right: end;
+*/							padding-right: 80px;
 							text-decoration: none;
+						}
+						.PinDown{
+							margin-left: -20px;
 						}
 						/*.button {
 							  background-color: #ffab40;*/
@@ -171,36 +207,53 @@
 						<h3><font color="white">Functionalities and Features</font></h3>
 						<div class="row">
 							<div class="col-12">
-								<!-- <footer>
-									<a>Functionalities and Features</a>
-								</footer> -->
 							</div>
 							<div class="col-4 col-12-narrow"> 
 								<!-- Deminsion of a card -->
 								<section>
-									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<span class="feature-icon"><span class="icon fa-" style="color: white;"></span></span>
 									<header>
-										<h3>Timely</h3>
+										<h3><font color="white">One pin, one event</font></h3>
 									</header>
-									<p>What's going on, before it happens.</p>
+									<p><font color="white">Each pin shown on the map indicates an event. You can see the event details by clicking the pin. </font></p>
 								</section>
 							</div>
 							<div class="col-4 col-12-narrow">
 								<section>
 									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
 									<header>
-										<h3>Instant</h3>
+										<h3><font color="white">Instant</font></h3>
 									</header>
-									<p>Real-time feedback. </p>
+									<p><font color="white">Real-time feedback.</font></p>
 								</section>
 							</div>
 							<div class="col-4 col-12-narrow">
 								<section>
 									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
 									<header>
-										<h3>Campus-wide</h3>
+										<h3><font color="white">Campus-wide</font></h3>
 									</header>
-									<p>Class, clubs, concerts, sports, and greek.</p>
+									<p><font color="white">Class, clubs, concerts, sports, and greek.</font></p>
+								</section>
+							</div>
+							<div class="col-6 col-12-narrow"> 
+								<!-- Deminsion of a card -->
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<header>
+										<h3><font color="white">Timely</font></h3>
+									</header>
+									<p><font color="white">What's going on, before it happens.</font></p>
+								</section>
+							</div>
+							<div class="col-6 col-12-narrow"> 
+								<!-- Deminsion of a card -->
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<header>
+										<h3><font color="white">Timely</font></h3>
+									</header>
+									<p><font color="white">What's going on, before it happens.</font></p>
 								</section>
 							</div>
 							<!-- <div class="col-12">
